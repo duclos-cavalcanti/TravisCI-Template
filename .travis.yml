@@ -37,6 +37,8 @@ matrix:
           script:
             - cd project
             - cd build
+            - cmake ..
+            - make
             - ../bin/bar
 
         # Dummy Test
