@@ -33,7 +33,7 @@ matrix:
         # Running Build
         - os: linux
           env:
-            - TEST="Standard Build"
+            - TEST="Standard Build Run"
           script:
             - cd project
             - cd build
