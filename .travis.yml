@@ -30,7 +30,16 @@ matrix:
             - cmake ..
             - make
 
-        # Dummy Test Build
+        # Running Build
+        - os: linux
+          env:
+            - TEST="Standard Build"
+          script:
+            - cd project
+            - cd build
+            - ../bin/bar
+
+        # Dummy Test
         - os: linux
           env:
             - TEST="Dummy Test Build"
