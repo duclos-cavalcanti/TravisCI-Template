@@ -25,6 +25,7 @@ matrix:
           env:
             - TEST="Standard Build"
           script:
+            - cd project
             - cd build
             - cmake ..
             - make
@@ -34,6 +35,7 @@ matrix:
           env:
             - TEST="Dummy Test Build"
           script:
+            - cd project
             - cd build
             - cmake ..
             - make foobar
